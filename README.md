@@ -13,3 +13,14 @@ Prefix a[id^='prefix'] :
 <div id='fix_randomId'> By.cssSelector("div[id^='fix']");
 <div id='randomId_fix'> By.cssSelector("div[id$='fix']");
 <div id='1223_fix_randomId'> By.cssSelector("div[id*='fix']");
+
+``
+To start the **Selenium Grid** we need to do the followings:
+1. Start a hub:
+java -jar selenium-server-standalone.jar -role hub
+   
+2. Start a node(open a new terminal) java -jar selenium-server-standalone.jar -role node -hub ip_address_from_1
+
+3. Open the webBrowser and navigate to ip_address_from_1/grid/console
+``
+   
